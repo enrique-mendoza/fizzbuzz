@@ -11,13 +11,13 @@ describe('Test Suits for ExplorerService.js', () => {
     });
 
     test('2) Get amout of explorers', () => {
-        const results = ExplorerService.getAmountOfExplorers(explorers, 'node');
+        const results = ExplorerService.getAmountOfExplorersByMission(explorers, 'node');
 
         expect(results).toBe(10);
     });
 
     test('3) Get explorers usernames', () => {
-        const results = ExplorerService.getExplorersUsernames(explorers, 'node');
+        const results = ExplorerService.getExplorersUsernamesByMission(explorers, 'node');
 
         expect(results).not.toBeUndefined();
     });
