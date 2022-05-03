@@ -21,4 +21,10 @@ describe('Test Suits for ExplorerService.js', () => {
 
         expect(results).not.toBeUndefined();
     });
+
+    test('4) Get usernames lists ', () => {
+        const results = ExplorerService.getJoinExplorersUsernamesByMission(explorers, 'node');
+
+        expect(results).not.toBeUndefined();
+    });
 });
